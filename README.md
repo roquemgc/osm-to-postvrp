@@ -13,7 +13,7 @@ pip install pillow
 
 ## Arquivos base
 
-- `limeira.osm` – Arquivo de mapa OSM, salvo no diretório `raiz`
+- `city.osm` – Arquivo de mapa OSM, salvo no diretório raiz
 - `base_model.txt` – Arquivo base com a tag `#ROADMAP`
 - `background.png` – Imagem usada para obter o limite geográfico. Deve estar em `../LimeiraPilot/config/background.png`
 

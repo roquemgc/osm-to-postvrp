@@ -2,8 +2,6 @@
 
 Este projeto em Python tem como objetivo extrair, normalizar e converter dados de ruas a partir de arquivos no formato `.osm` (OpenStreetMap). As coordenadas das ruas são processadas e salvas em um arquivo `model.txt`, seguindo uma estrutura específica usada no projeto **LimeiraPilot**.
 
----
-
 ## Requisitos
 
 - Python 3.8+
@@ -13,15 +11,11 @@ Este projeto em Python tem como objetivo extrair, normalizar e converter dados d
 pip install pillow
 ```
 
----
-
 ## Arquivos base
 
 - `limeira.osm` – Arquivo de mapa OSM, salvo no diretório `raiz`
 - `base_model.txt` – Arquivo base com a tag `#ROADMAP`
 - `background.png` – Imagem usada para obter o limite geográfico. Deve estar em `../LimeiraPilot/config/background.png`
-
----
 
 ## Como Executar
 
@@ -30,15 +24,12 @@ Execute o script principal:
 ```bash
 python -m extractor.main
 ```
----
 
 ## Exemplo de Linha Gerada
 
 ```
 Rua das Laranjeiras 1 [RESIDENTIAL][124,543]-[130,546]-[135,547]
 ```
-
----
 
 ## Observações
 

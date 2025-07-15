@@ -1,5 +1,3 @@
-# README.md
-
 # Extractor de Ruas de Arquivo OSM
 
 Este projeto em Python tem como objetivo extrair, normalizar e converter dados de ruas a partir de arquivos no formato `.osm` (OpenStreetMap). As coordenadas das ruas são processadas e salvas em um arquivo `model.txt`, seguindo uma estrutura específica usada no projeto **LimeiraPilot**.

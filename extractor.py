@@ -3,16 +3,17 @@ import math
 import xml.etree.ElementTree as ET
 from PIL import Image
 
+pilot_name = 'LimeiraPilot'
 current_directory = os.path.dirname(os.path.abspath(__file__));
-osm_file_path = os.path.join(current_directory, 'limeira.osm')
+osm_file_path = os.path.join(current_directory, 'city.osm')
 base_model_file_path = os.path.join(current_directory, 'base_model.txt')
-created_model_file_path = os.path.join(current_directory, '..', 'LimeiraPilot', 'config', 'model.txt')
+created_model_file_path = os.path.join(current_directory, '..', pilot_name, 'config', 'model.txt')
 latitudes, longitudes = [], []
 lat_limit = 0
 lon_limit = 0
 
 def get_image_dimensions():
-    image_path = os.path.join(current_directory, '..', 'LimeiraPilot', 'config', 'background.png')
+    image_path = os.path.join(current_directory, '..', pilot_name, 'config', 'background.png')
 
     with Image.open(image_path) as img:
         lat_limit, lon_limit= img.size
